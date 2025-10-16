@@ -14,7 +14,8 @@ const Home = () => {
       
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/5 to-background" />
+        <div className="absolute inset-0 bg-[image:var(--gradient-hero)]" />
+        <div className="absolute inset-0 bg-[image:var(--gradient-overlay)]" />
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
@@ -23,19 +24,19 @@ const Home = () => {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
               Discover Amazing
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Campus Events</span>
+              <span className="bg-[image:var(--gradient-cosmic)] bg-clip-text text-transparent"> Campus Events</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Join exciting events, workshops, and competitions happening on campus. Your next adventure starts here!
             </p>
-            <div className="inline-flex items-center space-x-4 bg-card border border-border rounded-2xl px-8 py-4">
+            <div className="inline-flex items-center space-x-4 bg-[image:var(--gradient-stats)] dark:bg-card border-2 border-primary/20 rounded-2xl px-8 py-4 shadow-[var(--shadow-glow)]">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary">{events.length}</div>
+                <div className="text-4xl font-bold bg-[image:var(--gradient-cosmic)] bg-clip-text text-transparent">{events.length}</div>
                 <div className="text-sm text-muted-foreground">Total Events</div>
               </div>
-              <div className="h-12 w-px bg-border" />
+              <div className="h-12 w-px bg-[image:var(--gradient-primary)]" />
               <div className="text-center">
-                <div className="text-4xl font-bold text-secondary">{categories.length}</div>
+                <div className="text-4xl font-bold bg-[image:var(--gradient-cosmic)] bg-clip-text text-transparent">{categories.length}</div>
                 <div className="text-sm text-muted-foreground">Categories</div>
               </div>
             </div>
