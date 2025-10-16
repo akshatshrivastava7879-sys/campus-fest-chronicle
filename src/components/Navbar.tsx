@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Calendar, Home, LogIn, UserPlus } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 const Navbar = () => {
   return (
@@ -28,6 +29,7 @@ const Navbar = () => {
               <Calendar className="h-4 w-4" />
               <span>Events</span>
             </Link>
+            <ThemeToggle />
             <Link
               to="/signin"
               className="flex items-center space-x-1 text-foreground hover:text-primary transition-colors"
@@ -45,6 +47,7 @@ const Navbar = () => {
           </div>
 
           <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
             <Link to="/signin" className="text-foreground hover:text-primary">
               <LogIn className="h-5 w-5" />
             </Link>
